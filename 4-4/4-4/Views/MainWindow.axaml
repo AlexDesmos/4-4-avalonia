@@ -1,0 +1,103 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:_4_4.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:_4_4.Views"
+        mc:Ignorable="d" d:DesignWidth="1300" d:DesignHeight="800"
+        x:Class="_4_4.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="_4_4">
+        <views:MainView />
+
+	<Design.DataContext>
+		<vm:MainWindow/>
+	</Design.DataContext>
+	
+	
+	<Grid ShowGridLines="True"
+			  RowDefinitions="50, *"
+			  ColumnDefinitions="950, *">
+
+		<DockPanel	Grid.Row="0"
+					Grid.ColumnSpan="2"
+					Background="PowderBlue"
+					HorizontalAlignment="Left"
+					MaxHeight="50"
+					MaxWidth="950">
+			<TextBlock Margin="20 15" Text="{Binding MainMenuEntity.Home}"/>
+			<TextBlock Margin="30 15" Text="{Binding MainMenuEntity.About}"/>>
+			<TextBlock Margin="30 15">Blog's main topic №1</TextBlock>
+			<TextBlock Margin="30 15">Blog's main topic №2</TextBlock>
+			<TextBlock Margin="30 15">Blog's main topic №3</TextBlock>
+			<TextBlock Margin="30 15">Associated blogs</TextBlock>
+		</DockPanel>
+
+		<StackPanel Grid.Column="1"
+					Grid.Row="0"
+					Background="PowderBlue">
+			<TextBlock HorizontalAlignment="Right" VerticalAlignment="Center"
+					   Margin="0,15,10,0"
+						   >
+				RSS
+
+			</TextBlock>
+		</StackPanel>
+
+		<StackPanel Grid.Column="1"
+					Grid.Row="1">
+
+			<TextBlock Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel molestie odio, maximus malesuada mi. Donec a congue eros, at varius magna. Aenean mollis ligula turpis, in vehicula mauris ullamcorper ac. Nullam laoreet ex placerat ipsum vestibulum, non egestas arcu imperdiet. Nam eget neque fringilla, sodales lacus consectetur, venenatis sapien. Nunc lorem sem, fermentum vel libero sed, mollis dictum neque. Cras nec dolor ex. Phasellus a nunc ut erat tincidunt molestie congue a erat. In hac habitasse platea dictumst. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris lectus ex, pharetra quis ex a, aliquet cursus lacus. Nam posuere vulputate dolor at ullamcorper. Morbi eget ante suscipit, egestas purus ut, tempor urna..."
+						   TextWrapping="Wrap"
+						   Margin="20,10,20,5"/>
+			<TextBlock TextDecorations="Underline" Margin="20,0,0,0" Text="More"/>
+			<TextBlock Text="Yesterday" Margin="20,5,0,0"/>
+
+			<TextBlock Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel molestie odio, maximus malesuada mi. Donec a congue eros, at varius magna. Aenean mollis ligula turpis, in vehicula mauris ullamcorper ac. Nullam laoreet ex placerat ipsum vestibulum, non egestas arcu imperdiet. Nam eget neque fringilla, sodales lacus consectetur, venenatis sapien. Nunc lorem sem, fermentum vel libero sed, mollis dictum neque. Cras nec dolor ex. Phasellus a nunc ut erat tincidunt molestie congue a erat. In hac habitasse platea dictumst. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris lectus ex, pharetra quis ex a, aliquet cursus lacus..."
+						TextWrapping="Wrap"
+						Margin="20,20,20,0"/>
+			<TextBlock TextDecorations="Underline" Margin="20,5,0,0" Text="More"/>
+			<TextBlock Text="1 week ago" Margin="20,5,0,0"/>
+
+		</StackPanel>
+
+		<StackPanel Grid.Column="0">
+
+			<TextBox Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel molestie odio, maximus malesuada mi. Donec a congue eros, at varius magna. Aenean mollis ligula turpis, in vehicula mauris ullamcorper ac. Nullam laoreet ex placerat ipsum vestibulum, non egestas arcu imperdiet. Nam eget neque fringilla, sodales lacus consectetur, venenatis sapien. Nunc lorem sem, fermentum vel libero sed, mollis dictum neque. Cras nec dolor ex. Phasellus a nunc ut erat tincidunt molestie congue a erat. In hac habitasse platea dictumst. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris lectus ex, pharetra quis ex a, aliquet cursus lacus. Nam posuere vulputate dolor at ullamcorper. Morbi eget ante suscipit, egestas purus ut, tempor urna.
+
+						Ut vehicula, nunc eu malesuada ullamcorper, mauris purus laoreet lectus, vitae vulputate mauris massa ut sem. Fusce convallis et magna nec condimentum. Curabitur aliquet lectus ac scelerisque aliquet. Pellentesque at erat sagittis, sollicitudin nisl in, tempor dolor. Integer rhoncus mi nec lacus facilisis lobortis. Nullam accumsan purus ac sapien bibendum, a posuere velit finibus. Morbi bibendum quam fringilla augue placerat, et ultrices erat consequat. Aliquam eget erat ante. Aenean ullamcorper nisl sem, sit amet ultrices dolor accumsan vitae. Etiam et molestie tortor, efficitur porttitor mi. Aenean sodales varius pharetra. Ut non quam massa. Nunc aliquet velit tortor, id commodo magna malesuada quis.
+
+						Aliquam ultrices nec purus vitae fermentum. Nam pretium sapien sed ante volutpat, sit amet consectetur lectus commodo. Proin et tristique nisl. In eget orci odio. Suspendisse convallis lectus a neque dictum feugiat. Phasellus lobortis arcu ipsum, ornare dictum lorem tempor sit amet. Nunc aliquam dolor ut odio porta, id convallis felis sollicitudin.
+
+						Vestibulum mollis ipsum at tellus lacinia, vel luctus turpis sollicitudin. Aenean vulputate nisl ac enim cursus convallis. Duis vitae vestibulum est."
+						 TextWrapping="Wrap"
+						 TextAlignment="Center"
+						 AcceptsReturn="True"
+						 Margin="0,70,0,0"
+						 Width="860"
+						 Height=""/>
+			<Image MaxWidth="470" Margin="20,30,0,10" Source="C:\Users\mboro\source\repos\4-3\Avalonia-4-3\4-3\Mountains.jpg"></Image>
+
+		</StackPanel>
+
+
+		<DockPanel Grid.Row="1"
+					Grid.Column="0"
+					VerticalAlignment="Bottom">
+			<TextBlock Margin="10,0,0,10">Tags: Tag1 Tag2 Tag3 Tag4"</TextBlock>
+			<TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Margin="530,0,0,10" >Rate this article:</TextBlock>
+			<Image Source="C:\Users\mboro\source\repos\4-3\Avalonia-4-3\4-3\Stars2.png"
+				   MaxHeight="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-2,20,0"/>
+		</DockPanel>
+
+
+
+
+	</Grid>
+
+
+
+
+
+</Window>
+
