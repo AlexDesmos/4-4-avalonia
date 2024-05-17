@@ -6,20 +6,13 @@ namespace _4_4.ViewModels;
 
 public class MainViewModel : ViewModelBase
 {
-    public MainEntity MainMenuEntity { get; set; }
+    
     public List<BlogsEntity> BlogsEntities { get; set; }
     public List<NewsEntity> NewsEntities { get; set; }
     
     public MainViewModel()
     {
-        MainMenuEntity = new()
-        {
-            Home = "Home",
-            About = "About",
-            MainTopicsList = new List<string> { "Main topic 1", "Main topic 2", "Main topic 3"},
-            Profile="RSS"
-
-        };
+        
         BlogsEntities = new List<BlogsEntity>()
         {
             new BlogsEntity()

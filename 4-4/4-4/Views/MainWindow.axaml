@@ -8,7 +8,7 @@
         x:Class="_4_4.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
         Title="_4_4">
-        <views:MainView />
+        
 
 	<Design.DataContext>
 		<vm:MainWindow/>
@@ -25,8 +25,8 @@
 					HorizontalAlignment="Left"
 					MaxHeight="50"
 					MaxWidth="950">
-			<TextBlock Margin="20 15" Text="{Binding MainMenuEntity.Home}"/>
-			<TextBlock Margin="30 15" Text="{Binding MainMenuEntity.About}"/>>
+			<TextBlock Margin="20 15" Text="Home"/>
+			<TextBlock Margin="30 15" Text="About"/>
 			<TextBlock Margin="30 15">Blog's main topic №1</TextBlock>
 			<TextBlock Margin="30 15">Blog's main topic №2</TextBlock>
 			<TextBlock Margin="30 15">Blog's main topic №3</TextBlock>
